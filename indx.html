@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/f2f0c3718a.js" crossorigin="anonymous"></script>
+<style>
+  body{
+    padding: 10px;
+  }
+  *{
+   padding: 0; 
+   margin: 0;
+   box-sizing: border-box;
+  }
+  .container{
+display: flex;
+background-color: red;
+justify-content: space-between;
+flex-wrap: wrap;
+
+  }
+ .contact-left{
+flex-basis: 35%;
+  }
+  .Contact-right{
+    flex-basis: 60%;
+  }
+  
+  form input ,form textarea{
+width: 100%;
+border: none;
+outline: none;
+padding: 10px;
+background: #333;
+margin: 20px 0;
+  }
+  @media screen and (max-width:600px){
+    .container{
+      background-color: green;
+    }
+    
+    .contact-left{
+  flex-basis: 100%;
+    }
+    .Contact-right{
+    flex-basis: 100%;
+   
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+
+<div class="contact-left">
+  <h1>Contact Me</h1>
+<p> 0940264358</p>
+<p>abrehetaregay4@gmail.com</p>
+<a href="">  <i class="fa-brands fa-linkedin-in"></i></a>
+<a href=""><i class="fa-brands fa-telegram"></i></a>
+<a href=""><i class="fa-brands fa-facebook"></i></a>
+</div>
+
+
+
+
+ <div class="Contact-right">
+  <form>
+  <input type="text" name="name" placeholder="Your-name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" id="message"  rows="6" placeholder="Your Message"></textarea>
+  </form>
+  </div>
+
+</div>
+
+</body>
+</html>
+ 
+  
+
